@@ -1,1 +1,58 @@
+public class Book {
+	
+	private String author;
+	private String title;
+	private double price;
+	private int copiesSold;
+	private int copiesInStock;
+	
+	public Book() {
+		
+	}
+	
+	public Book(String author, String title, double price) {
+		this.author = author;
+		this.title = title;
+		this.price = price;
+		this.copiesSold = 0;
+		this.copiesInStock = 0;
+	}
+	
+	public int getNumCopiesSold() {
+		return copiesSold;
+	}
+	
+	public void phoneNumberName(String phoneAndName) {
+		this.phoneAndName = phoneAndName;
+	}
+	
+	public int getNumCopiesInStock() {
+		return copiesInStock;
+	}
+	
+	public void setNumCopiesInStock(int copiesInStock) {
+		this.copiesInStock = copiesInStock;
+	}
+	
+	public String getTitle() {
+		return this.title;
+	}
+	
+	public String getAuthor() {
+		return this.author;
+	}
+	
+	public double getPrice() {
+		return this.price;
+	}
+	
+	
+	public String toString() {
+		String info = this.title + " by: " + this.author + ". Price: $" + this.price + ". " + this.copiesInStock
+				+ " Copies in Stock! " + this.copiesSold + " Copies Sold!";
+		return info;
+	}
+	
+
+}
 
